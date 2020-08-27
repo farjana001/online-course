@@ -8,3 +8,21 @@
 .grand-total{
     color: rgb(179, 108, 2);
 }
+.course-box{
+    background-color: #343A40;
+}
+.course-box img{
+    width: 300px;
+    border-radius: 5px;
+    box-shadow: 5px 5px 12px rgba(0, 0, 0, 0.2);
+}
+.place-button {
+    background: none;
+    border: 1px solid rgb(179, 108, 2);
+    color: white;
+    margin-top: 10px;
+}
+.place-button:hover{
+    background-color: #424950;
+    color: #09cecb;
+}
