@@ -9,12 +9,12 @@ const Header = () => {
         <div className='logo'>
             <img src={logo} alt=""/>
             <div>
-  <Navbar bg="dark" variant="dark">
-    <Navbar.Brand href="#home">Navbar</Navbar.Brand>
+  <Navbar className='my-nav' bg="dark" variant="dark">
+    <Navbar.Brand href="#home">Home</Navbar.Brand>
     <Nav className="mr-auto">
-      <Nav.Link href="#home">Home</Nav.Link>
-      <Nav.Link href="#features">Features</Nav.Link>
-      <Nav.Link href="#pricing">Pricing</Nav.Link>
+      <Nav.Link href="#home">Courses</Nav.Link>
+      <Nav.Link href="#features">Contact us</Nav.Link>
+      <Nav.Link href="#pricing">About Us</Nav.Link>
     </Nav>
     <Form inline>
       <FormControl type="text" placeholder="Search" className="mr-sm-2" />

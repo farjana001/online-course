@@ -1,24 +1,32 @@
 
 .course-container{
-    /* width: 70%; */
-
-    display: flex;
-  
-    align-items: center;
-    padding: 20px;
+    background-color: #343A40;
+    margin: 15px;
+    border-radius: 10px;
+    padding: 30px;
+    box-shadow: 5px 5px 12px rgba(0, 0, 0, 0.2);
 }
 .course-details{
-    width: 40%;
-    margin-left: 20px;
+    color: rgb(214, 206, 206);
+} 
+.course-details h6{
+    color: rgb(248, 240, 240);
 }
-.course-outline img{
+.course-details img{
     width: 80px;
-    border: 1px solid gray;
     border-radius: 50%;
+    box-shadow: 5px 5px 12px rgba(0, 0, 0, 0.2);
+}
+.course-outline{
+    width: 42%;
+    margin-left: 10px;
+}
+.course-outline h4{
+    color: #09cecb;
 }
 .course-img {
- /* height: 200px; */
  width: 300px;
+ box-shadow: 5px 5px 12px rgba(0, 0, 0, 0.2);
 }
 .skills{
     
@@ -26,15 +34,19 @@
 .enroll-button{
     padding: 4px 10px;
     background-color: gray;
-    cursor: pointer;
     outline: none;
     color: white;
     border: none;
     border-radius: 2px;
+    margin-left: 20px;
+    background-color: rgb(179, 108, 2);
+    transition: all 0.3s ease;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.2);
 }
-.table-body{
-    width: 40%;
+.enroll-button:hover{
+    background-color:  #07BAB8;
 }
-.table-container{
-    width: 70%;
+.course-fee{
+    color: #07BAB8;
+    font-size: 20px;
 }
