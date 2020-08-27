@@ -6,15 +6,16 @@ import Price from '../Price/Price';
 import './Main.css'
 
 const Main = () => {
+    // importing data
     const [courses, setCourses] = useState(courseData);
     const [price, setPrice] = useState([]);
 
+    // button handler function
     const handleAddPrice = (course) => {
       const newPrice = [...price, course]
       setPrice(newPrice);
     }
     
-
     return (
         <div className='d-flex'>
             <div className='course-body'>
@@ -22,10 +23,9 @@ const Main = () => {
                     courses.map(course => <Course key={course.id} course={course} handleAddPrice={handleAddPrice}></Course>)
                 }
             </div>
-            <div className="">
+            <div>
                 <Price price={price}></Price>
             </div>
-      
         </div>
     );
 };

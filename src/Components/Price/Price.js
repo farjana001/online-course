@@ -1,50 +1,47 @@
 import React from 'react';
 import './Price.css';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faPlus, faMinus } from '@fortawesome/free-solid-svg-icons'
+
 
 
 const Price = (props) => {
     const price = props.price;
     
+    // calculation course price
     const total = price.reduce((total, fee) => total + fee.price ,0);
-  
     let discount = 0;
+    // condition of discount
     if(price.length > 1){
         discount = (10 / 100) * total;
     }
     const grandTotal = total - discount;
+
+    // formatting fraction number
     const formatNumber = num => {
-        const fixedNum = num.toFixed(2);
+        const fixedNum = num.toFixed(0);
         return Number(fixedNum);
     }
-
- 
     return (
         <div className='price-container mt-3 ml-3'>
             <h4>Order Summery</h4>
-            <table>
-                <tbody>
-                    <tr>
-                        <td>Course Item : </td>
-                        <td>{price.length}</td>
-                    </tr>
-                    <tr>
-                        <td>Course Fee : </td>
-                        <td>${total}</td>
-                    </tr>
-                    <tr>
-                        <td>Discount : </td>
-                        <td>${formatNumber(discount)}</td>
-                    </tr>
-                </tbody>
-            </table>
+                <table>
+                    <tbody>
+                        <tr>
+                            <td>Course Item : </td>
+                            <td>{price.length}</td>
+                        </tr>
+                        <tr>
+                            <td>Course Fee : </td>
+                            <td>${total}</td>
+                        </tr>
+                        <tr>
+                            <td>Discount : </td>
+                            <td>${formatNumber(discount)}</td>
+                        </tr>
+                    </tbody>
+                </table>
             <h5>Order Total : ${formatNumber(grandTotal)}</h5>
-
-
-
+            
             <div>
-                
                 {
                     price.map(course => {
                         return (
