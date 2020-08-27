@@ -9,6 +9,7 @@ const Price = (props) => {
     // calculation course price
     const total = price.reduce((total, fee) => total + fee.price ,0);
     let discount = 0;
+
     // condition of discount
     if(price.length > 1){
         discount = (10 / 100) * total;
@@ -20,6 +21,8 @@ const Price = (props) => {
         const fixedNum = num.toFixed(0);
         return Number(fixedNum);
     }
+
+    // displaying order summery
     return (
         <div className='price-container mt-3 ml-3'>
             <h4>Order Summery</h4>

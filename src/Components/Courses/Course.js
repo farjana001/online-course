@@ -14,10 +14,12 @@ const Course = (props) => {
     // course content displaying
     return (
         <div className='course-container d-flex align-items-center'>
-            <div><img className='img-fluid course-img' src={picture} alt=""/></div>
+            <div>
+                <img className='img-fluid course-img' src={picture} alt="course item image"/>
+            </div>
             <div className="course-outline">
                 <h4>{name}</h4>
-                <ul className='skills'>
+                <ul>
                     {
                         skills.map(skill => <li>{skill.get}</li>)
                     }
