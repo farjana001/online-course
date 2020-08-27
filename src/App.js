@@ -21,8 +21,8 @@ function App() {
   return (
     <div className="App-header">
         <Header></Header>
-      <div className="course-body d-flex">
-        <div>
+      <div className="d-flex">
+        <div className='course-body'>
           {
             courses.map(course => <Course key={course.id} course={course} handleAddPrice={handleAddPrice}></Course>)
           }

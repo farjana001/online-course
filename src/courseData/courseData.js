@@ -81,7 +81,7 @@ var courseData = [
         price: 29,
         duration: 8,
         hours: 5,
-        picture: "https://i.ibb.co/ZcrRgFp/marketing-analytics.jpg",
+        picture: "https://i.ibb.co/ZNshQ2R/marketing.jpg",
         instructor: {
             name: "Lya Charles",
             img: "https://i.ibb.co/hZDCMJQ/teacher.jpg"
